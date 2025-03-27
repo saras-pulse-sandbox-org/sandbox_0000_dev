@@ -5,10 +5,10 @@ require-dbt-version: [">=1.0.0", "<2.0.0"]
 profile: "sandbox"
 
 vars:
-  version: "1.0.0" # Version of Pulse
+  version: "2.0.0" # Version of Pulse
   currency: "USD" # Currency to be used
   to_timezone: "America/Los_Angeles" # Timezone to convert the data to
-  cogsMargin: 15 # COGS Margin to be used in the COGS calculation
+  cogsMargin: 15.0 # COGS Margin to be used in the COGS calculation
 
   # Platform flags
   SQP: false
@@ -36,6 +36,7 @@ vars:
 # These configurations specify where dbt should look for different types of files.
 # The `model-paths` config, for example, states that models in this project can be
 # found in the "models/" directory. You probably won't need to change these!
+  timezone: UTC
 model-paths: ["models"]
 analysis-paths: ["analyses"]
 test-paths: ["tests"]
