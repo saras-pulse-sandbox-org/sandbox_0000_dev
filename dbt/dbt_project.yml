@@ -23,7 +23,7 @@ vars:
   BINGADS: false
   FACEBOOK: false
   GA4: false
-  GOOGLEADS: false
+  GOOGLEADS: true
   GSS: false
   KLAVIYO3: false
   PINTERESTADS: false
